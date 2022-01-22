@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import Calculator from "./calculator/Calculator";
+import "./styles/global.scss";
+import { Arrowleft } from "./svg/svg-icons";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="plan">
+        <Arrowleft style={{ marginTop: "2px" }} />
+
+        <span> Let’s plan your saving goal</span>
+      </div>
+      <Calculator />
     </div>
   );
 }
